@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>curiosity.lan</title>
+    <link Content-Type="text/css" href="style/style.css" rel="stylesheet" />
+    <link Content-Type="text/css" href="style/modal.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="main">
+
+        <!-- The Modal -->
+        <div id="modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-box">
+                <span class="close" onclick="close_modal()">&times;</span>
+                <div class="chat" id="chat">
+                </div>
+                <div class="reply-box">
+                    <input type="color" id="color" name="color" value="#e66465">
+                    <textarea id="reply" name="msg" rows="5" cols="50" maxlength="300"></textarea>
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="desc">
+            <h1 id="h1">Testing</h1>
+            <h2 id="h2" onclick="leave(`flow`)">Use the buttons<br>below to continue</h2>
+        </div>
+        <!-- <img class=" img" src="cards.jpg"> -->
+        <div id="buttons">
+            <h3 id="h2" class="flow" onclick="leave(`flow`)">Test Script.</h3>
+            <h3 id="h2" class="files" onclick="leave(`files`)">File list?</h3>
+            <h3 id="h2" class="stats" onclick="leave(`stats`)">Stats. Pronto.</h3>
+            <h3 id="h2" class="stats disabled">[Disabled]</h3>
+        </div>
+
+        <a href="/">
+            <h5 id="hidden">Reset?</h5>
+        </a>
+
+        <h3 onclick="open_modal()">Chat</h3>
+
+        <a href="/$messages"></a>
+
+    </div>
+
+    <script src="scripts/stats.js"></script>
+    <script src="scripts/flow.js"></script>
+    <script src="scripts/files.js"></script>
+
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
